@@ -23,16 +23,45 @@
         nav a:hover{
           background-color: #fb0;
         }
+          
+        .Lost{
+		    	width: 20px;
+	    		height: 20px;
+		    	display: inline-block;
+		    	background-color: #00f;
+		    }
+	    	.pna{
+	    		background-color: #000;
+	    		color: #fff;
+	    		width: 150px;
+	    		padding: 20px;
+    			cursor: pointer;
+	    	}
+    		.conta{
+	    		dsiplay: none;
+  		}
+
       </style>
   </head>
 <html>
 <body>
-  <div class="Lose">
+  <div class="Lost">
     <nav>
-      <a class="dropdown-item" href="WorldMapImage/WorldMap.html">地圖蒐集</a>
-      <a class="dropdown-item" href="Hello.html">心裡話</a>
-      <a class="dropdown-item" href="https://www.bing.com">離開這可悲的地方</a>
+      <a class="conta">Lost</a>
+      <a class="conta" href="WorldMapImage/WorldMap.html">地圖蒐集</a>
+      <a class="conta" href="Hello.html">心裡話</a>
+      <a class="conta" href="https://www.bing.com">離開這可悲的地方</a>
     </nav>
   </div>
+  我到底會些什麼？到底有什麼值得說出來？
+  
+  <spript src="jquery/jquery-3.7.1.min.js"></spript>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.Lost').click(funcyion(){
+  			$('.conta').hide();
+  		})
+  	})
+  </spript>
 </body>
 </html>
