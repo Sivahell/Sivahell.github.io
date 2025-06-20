@@ -18,27 +18,15 @@
           text-decoration: none;
           font-size: 14pt;
           padding: 10px 30px;
-          display: inline-block;
+          display: none;
         }
         nav a:hover{
           background-color: #fb0;
         }
           
         .Lost{
-	  width: 20px;
-	  height: 20px;
-          display: inline-block;
-	  background-color: #00f;
-	}
-	.pna{
-	   background-color: #000;
-	   color: #fff;
-   	   width: 150px;
-	   padding: 20px;
-           cursor: pointer;
 	}
     	.conta{
-	   dsiplay: none;
   	}
       </style>
   </head>
@@ -53,13 +41,13 @@
   我到底會些什麼？<br>
   到底有什麼可以值得說出來？<br>
   
-  <spript src="jquery/jquery-3.7.1.min.js"></spript>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.Lost').click(funcyion(){
-  	$('.conta').hide();
+  <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.Lost').click(function(){
+          $('.conta').hide();
       })
     })
-  </spript>
+  </script>
 </body>
 </html>
