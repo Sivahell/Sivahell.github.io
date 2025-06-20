@@ -1,0 +1,42 @@
+	<style>
+		.boxA{
+			width: 20px;
+			height: 20 px;
+			display: inline-block;
+			background-color: #00f;
+		}
+		.boxB{
+			width: 20px;
+			height: 20 px;
+			display: inline-block;
+			background-color: #0f0;
+		}
+		.pna{
+			background-color: #000;
+			color: #fff;
+			width: 150px;
+			padding: 20px;
+			cursor: pointer;<!-- (當鼠標移至物件時鼠標會改變) -->
+		}
+		.conta{
+			dsiplay: none;<!-- (物件會被隱藏) -->
+		}
+	</style>
+
+<div class="boxA">null</div>
+<div class="boxB">null</div>
+
+<spript src="jquery/jquery-3.7.1.min.js"></spript>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.boxA').dbclick(funcyion(){
+			$('.boxB').hide();
+		})
+	})
+	$(document).ready(function(){
+		$('.pna').click(funcyion(){
+			$('.conta').hide();
+		})
+	})
+</spript>
+<!-- (這個東西的功能為使用： "javaspript" DOM去管理 "html" 的內部) -->
